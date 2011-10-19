@@ -16,17 +16,88 @@
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #221c9c; margin-bottom: 3px; }
+    h1 { font-size: 3.8em; color: #6224de; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #221c9c; }
-    h3 { text-align: center; color: #221c9c; }
-    a { color: #221c9c; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    h2 { font-size: 1.5em; color: #6224de; clear:left; }
+    h3 { text-align: center; color: #6224de; }
+    a { color: #6224de; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    
+    div#body {
+      margin-bottom:50px;
+      overflow:hidden;
+      clear:left;
+    }
+    
+    div.buttons {
+      width:350px;
+      margin:20px auto 50px;
+      clear:both;
+    }
+    /* purple candy
+    *******************************************************************************/
+    button.purple-candy {
+      border:none;
+      float:left;
+      margin:10px;
+      height:50px;
+      background-color: #9e76e8;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#9e76e8 0%), to(#7038e0 50%));
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);
+      background-image: -moz-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);
+      background-image: -ms-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);
+      background-image: -o-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);
+      background-image: linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      color: #fff;
+      font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+      line-height: 1;
+      padding: 10px 0 12px 0;
+      text-align: center;
+      text-shadow: 0px -1px 1px #473569;
+      width: 150px;
+      -webkit-background-clip: padding-box; }
+      button.purple-candy:hover {
+        background-color: #8d69cf;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#8d69cf 0%), to(#6332c7 50%));
+        /* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);
+        background-image: -moz-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);
+        background-image: -ms-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);
+        background-image: -o-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);
+        background-image: linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);
+        -webkit-background-clip: padding-box;
+        cursor: pointer; }
+      button.purple-candy:active {
+        background: #4a1aab;
+        background: -moz-radial-gradient(50% 31% 0deg, circle cover, rgba(38, 76, 153, 0.4), rgba(11, 23, 46, 0.4)), -moz-linear-gradient(top, #7b5cb5 0%, #572bad 50%, #4a1aab 50%, #4b1bab 100%);
+        background: -webkit-gradient(radial, 50% 20%, 75, 50% 50%, 0, from(rgba(38, 76, 153, 0.4)), to(rgba(11, 23, 46, 0.4))), -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #7b5cb5), color-stop(0.5, #572bad), color-stop(0.5, #4a1aab), color-stop(1, #4b1bab));
+        color: #ddd;
+        -webkit-background-clip: padding-box; }
+
+    div.share {
+      margin:20px 0px;
+      overflow:hidden;
+    }
+    
+    div.share div.twitter {
+      float:left;
+    }
+
+    div.share div.facebook {
+      float:left;      
+    }
+    
   </style>
 </head>
 
@@ -38,8 +109,6 @@
     <div class="download">
       <a href="http://github.com/hackdemocracy/occupyeuro/zipball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/hackdemocracy/occupyeuro/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
     <h1><a href="http://github.com/hackdemocracy/occupyeuro">occupyeuro</a>
@@ -49,14 +118,39 @@
       Stamp your euros to spread the word about #Occupy
     </div>
 
-    <h2>Original idea</h2>
-<p><a href="http://OccupyGeorge.com">OccupyGeorge.com</a></p>
-    <h2>License</h2>
-<p>Common Creative</p>
-<h2>Authors</h2>
-<p>Xavier Damman (xdamman@gmail.com)<br/>@xdamman</p>
+    <div class="share">
+      <div class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Stamp your EUROS to spread the word about #OccupyWallStreet, #OccupyEuro #OWS" data-count="horizontal" data-via="occupyeuro">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>      
+      </div>
+      <div class="facebook">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257928110893243";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+      </div>
+    </div>
+
+		<div id="body">
+
+			<img src="img/euro5-futureproperty.png" />
+			<img src="img/euro20-futureproperty.png" />
+			<img src="img/euro50-futureproperty.png" />
+
+      <div class="buttons">
+			  <button class="purple-candy" OnClick="window.location='img/stamp-futureproperty.png';">Download the stamp</button>
+			  <button class="purple-candy" OnClick="window.location='PSD/Stamp-FutureProperty.psd';">Download the original PSD file</button>
+			</div>
+		</div>
+
+
 <h2>Contact</h2>
-<p> (info@hackdemocracy.org)<br/>      </p>
+<p> (info@hackdemocracy.org)
+<br/>
+</p>
 
 
     <h2>Download</h2>
@@ -74,7 +168,20 @@
       get the source code on GitHub : <a href="http://github.com/hackdemocracy/occupyeuro">hackdemocracy/occupyeuro</a>
     </div>
 
+
+
+    <div id="footer" style="text-align:center;font-size:11px;margin-top:40px;">
+    	<p style="font-family:Arial, Helvetica, sans-serif;color:grey;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">Occupy George is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a></span></p>
+
+            <p style="font-family:Arial, Helvetica, sans-serif;color:grey;"><i>LEGAL DISCLAIMER: The intent behind Occupy Euro is not to render any money unfit to be reissued, and in fact the hope is that all stamped money will circulate as much as possible, passing knowledge to all those who come across the bills.</i></p>
+
+            <p style="font-family:Arial, Helvetica, sans-serif;color:grey;">Original idea: <a href="http://OccupyGeorge.com">OccupyGeorge.com</a></p>
+
+    		</div>
+
+
   </div>
+
 
   <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
